@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists Example</title>
+</head>
+<body style="background-color: green;">
+    <h2>Nested List</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea
+                    <ul>
+                        <li>China</li>
+                        <li>Africa</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+
+    <ul>
+        <li>Coffee
+            <ul>
+                <p>-black hot drink</p>
+            </ul>
+        </li>    
+        <li>Milk
+            <ul>
+                <p>- white cold drink</p>
+            </ul>
+        </li>
+    </ul>
+    <h3>Numbered List</h3>
+    <ol>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Lemons</li>
+        <li>Oranges</li>
+    </ol>
+
+    <h2>Letters List</h2>
+    <ol type="A">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Lemons</li>
+        <li>Oranges</li>
+    </ol>
+
+    <h2>Lowercase Letters List</h2>
+    <ol type="a">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Lemons</li>
+        <li>Oranges</li>
+    </ol>
+
+    <h2>Roman Numbers List</h2>
+    <ol type="I">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Lemons</li>
+        <li>Oranges</li>
+    </ol>
+
+    <h2>Lowercase Roman Numbers List</h2>
+    <ol type="i">
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Lemons</li>
+        <li>Oranges</li>
+    </ol>
+    <h2>Link per enviar emails</h2>
+    <a href="mailto:someone@example.com">Enviar email</a>
+
+    <h2>Basic CREATE TABLE statement</h2>
+    <pre>
+    CREATE TABLE example (
+        id INT,
+        data VARCHAR(100)
+    );
+    </pre>
+
+    <h2>Creating a table with a particular storage engine</h2>
+    <pre>
+    CREATE TABLE example_innodb (
+        id INT,
+        data VARCHAR(100)
+    ) ENGINE=InnoDB;
+    </pre>
+
+    <h2>Creating a table with AUTO_INCREMENT</h2>
+    <pre>
+    CREATE TABLE example_autoincrement (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        data VARCHAR(100)
+    );
+
+    INSERT INTO example_autoincrement (data) VALUES ('Hello world');
+
+    SELECT * FROM example_autoincrement;
+    </pre>
+
+    <h2>Creating a table with TIMESTAMP</h2>
+    <pre>
+    CREATE TABLE example_timestamp (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+    </pre>
+
+</body>
+</html>

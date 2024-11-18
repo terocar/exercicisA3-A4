@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetación</title>
+    <style>
+        /* Estilos generales para el contenedor */
+        body {
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-columns: 2fr 1fr;
+            /*gap: 10px;*/
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Estilos para cada sección */
+        header {
+            grid-column: 1 / span 2;
+            background-color: #4DA6FF;
+            display: flex;
+            font-size: 5em;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: #4DFFFF;
+            display: flex;
+            font-size: 5em;
+            font-weight: bold;
+        }
+
+        aside {
+            background-color: #99FFCC;
+            display: flex;
+            font-size: 5em;
+            font-weight: bold;
+        }
+
+        footer {
+            grid-column: 1 / span 2;
+            background-color: #FFCC99;
+            display: flex;
+            font-size: 5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <aside>Aside</aside>
+    <footer>Footer</footer>
+</body>
+</html>

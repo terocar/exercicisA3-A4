@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .checkmarks {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Tablas HTML</h1>
+    
+    <!-- Primera Tabla -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Telephone</th>
+        </tr>
+        <tr>
+            <td>Bill Gates</td>
+            <td>555 77 854</td>
+            <td>555 77 855</td>
+        </tr>
+    </table>
+
+    <!-- Segunda Tabla -->
+    <table style="margin-top: 20px;">
+        <tr>
+            <th>First Name:</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <th>Telephone:</th>
+            <td>555 77 854</td>
+        </tr>
+        <tr>
+            <td colspan="2">555 77 855</td>
+        </tr>
+    </table>
+
+    <!-- Tercera Sección -->
+    <div class="container">
+        <table>
+            <tr>
+                <td>First</td>
+                <td>Row</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>Row</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>First</td>
+                <td>Row</td>
+            </tr>
+            <tr>
+                <td>Second</td>
+                <td>Row</td>
+            </tr>
+        </table>
+
+        <div class="checkmarks">
+            <span>✔️</span>
+            <span>✔️</span>
+        </div>
+    </div>
+</body>
+</html>
